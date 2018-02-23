@@ -29,8 +29,8 @@ vel_label_subset = subset( vel_subset, station %in% station_labels)
 
 p_flow_vel = ggplot( data = vel_subset, aes (x = station_distance, y  = flow_velocity ) ) +
   geom_line() + 
-  labs(title = "Flow velocity, flow area and water level", x = "Distance to downstream station", y = "Flow velocity (m/s)",
-       subtitle = "Peak time, Return period 100, Equilibrium model, EQ11") +
+  labs(title = "Flow velocity and flow area", x = "Distance to downstream station", y = "Flow velocity (m/s)",
+       subtitle = "Peak time, Return period 100, Equilibrium model, SE1") +
   geom_text( data = vel_label_subset, size = 3, aes(label = station, x = station_distance, y = flow_velocity, vjust = 3)) +
   geom_segment( data = vel_label_subset, aes(xend = station_distance, y = flow_velocity - 0.05 , yend = flow_velocity - 0.2)) #+
   #scale_color_distiller(palette = "RdBu") + theme_dark()
@@ -58,7 +58,7 @@ p_height = ggplot( data = vel_subset, aes (x = station_distance, y = water_surf_
   labs(x = "Distance to downstream station", y =  "Water level (m)" ) +
   geom_text( data = vel_label_subset, size = 3, aes(label = station, x = station_distance, y =  water_surf_elevation - Thalweg , vjust = -2)) +
   geom_segment( data = vel_label_subset, aes(xend = station_distance,
-                                             y = water_surf_elevation - Thalweg + 0.12 , 
+                                             y = water_surf_elevation - Thalweg + 0.12 ,
                                              yend = water_surf_elevation - Thalweg + 0.3))
 
 #print(p_flow_area)
@@ -93,7 +93,7 @@ p_height = ggplot( data = vel_subset, aes (x = station_distance, y = water_surf_
 # print( p_thalweg)
 
 
-multiplot( p_flow_vel, p_flow_area, p_height, cols = 1) 
+multiplot( p_flow_vel, p_flow_area, cols = 1) 
 
  
  

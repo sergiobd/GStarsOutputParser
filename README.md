@@ -17,6 +17,10 @@ Please note that most of the plotting scripts require R's [ggplot2](http://ggplo
 
 This toolset was written for [Juliana Dimate's](https://www.linkedin.com/in/jdimate/) hydraulic assessment of the Pamplonita river in Santander, Colombia.  
 
+These are some of the plots that can be made:
+
+![Example plots](https://github.com/sergiobd/GStarsOutputParser/ExamplePlots.png)
+
 ## Reference - Functions
 
 #### grab_output_data (output_filename, num_stations)

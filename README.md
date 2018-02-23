@@ -19,7 +19,7 @@ This toolset was written for [Juliana Dimate's](https://www.linkedin.com/in/jdim
 
 These are some of the plots that can be made:
 
-![Example plots](https://github.com/sergiobd/GStarsOutputParser/ExamplePlots.png)
+![Example plots](https://github.com/sergiobd/GStarsOutputParser/blob/master/ExamplePlots.png)
 
 ## Reference - Functions
 

@@ -1,7 +1,8 @@
 # GStarsOutputParser
 
+The GSTARS Output Parser is a set of tools for parsing and plotting GSTARS output data.
 
-GSTARS ([Generalized Stream Tube computer models for Alluvial River Simulation](http://www.engr.colostate.edu/ce/facultystaff/yang/gstars.html)) was developed by the U.S. Bureau of Reclamation for studying steady and quasi-steady flows. 
+GSTARS ([Generalized Stream Tube computer models for Alluvial River Simulation](http://www.engr.colostate.edu/ce/facultystaff/yang/gstars.html)) was developed by the U.S. Bureau of Reclamation for simulating steady and quasi-steady hydraulics.
 
 GSTARS was written in FORTRAN and its output consists in a series of structured but complex data files containing both hydraulic, sediment transport, and cross-section data. Raw output files are difficult to use unless they are parsed into friendlier structures for analysis. The GSTARS Output Parser is a set of functions and scripts for [R](https://www.r-project.org/) that allow to parse and plot GSTARS output data. 
 
